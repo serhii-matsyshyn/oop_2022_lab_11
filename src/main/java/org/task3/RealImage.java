@@ -10,6 +10,11 @@ public class RealImage implements MyImage {
     public RealImage(String filename) {
         frame = new JFrame();
         ImageIcon icon = new ImageIcon(filename);
+        // check if image is loaded
+        if (icon.getImageLoadStatus() != 8) {
+            System.out.println("Image not found");
+        }
+
         JLabel label = new JLabel(icon);
         frame.add(label);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

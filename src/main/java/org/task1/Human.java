@@ -1,5 +1,6 @@
 package org.task1;
 
+import lombok.Getter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
@@ -8,7 +9,7 @@ enum Gender {
 }
 
 @SuperBuilder
-@ToString
+@ToString @Getter
 public class Human {
     private String name;
     private int age;
