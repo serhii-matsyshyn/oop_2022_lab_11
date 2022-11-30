@@ -10,6 +10,9 @@ public class Main {
                 new Client("ClientABC", 99, Gender.MALE, "<example_email>@ucu.edu.ua"),
                 new GiftMail());
         mailBox.addMailInfo(mailInfo);
+        mailInfo = new MailInfo(new Client("ClientCAB", 10, Gender.FEMALE, "<example_email>@ucu.edu.ua"),
+                new CongratulationMail());
+        mailBox.addMailInfo(mailInfo);
         mailBox.sendAllMail();
     }
 }
