@@ -7,6 +7,8 @@
     <groupId>org.example</groupId>
     <artifactId>oop_2022_lab_11</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -24,6 +26,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <maven.test.failure.ignore>true</maven.test.failure.ignore>
     </properties>
 
 </project>
